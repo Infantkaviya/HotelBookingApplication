@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import { addRoom } from "../utils/ApiFunctions"
 import RoomTypeSelector from "../common/RoomTypeSelector"
 import { Link } from "react-router-dom"
@@ -10,6 +10,7 @@ const AddRoom = () => {
     roomPrice: "",
   })
 
+  const fileInputRef = useRef(null)
   const [imagePreview, setImagePreview] = useState("")
   const [successMessage, setSuccessMessage] = useState("")
   const [errorMessage, setErrorMessage] = useState("")
@@ -44,6 +45,7 @@ const AddRoom = () => {
       if (success !== undefined) {
         setSuccessMessage("A new room was added to the database")
         setNewRoom({ photo: null, roomType: "", roomPrice: "" })
+        fileInputRef.current.value = null
         setImagePreview("")
         setErrorMessage("")
       } else {
@@ -112,6 +114,7 @@ const AddRoom = () => {
                   type="file"
                   className="form-control"
                   onChange={handleImageChange}
+                  ref={fileInputRef}
                 />
                 {imagePreview && (
                   <img
