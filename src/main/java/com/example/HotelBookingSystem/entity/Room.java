@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
+import jakarta.persistence.Basic;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -37,6 +38,7 @@ public class Room {
     private boolean isBooked = false;
 
     @Lob
+    @Basic(fetch = FetchType.EAGER)
     @Column(name = "photo", columnDefinition = "BYTEA")
     private byte[] photo;
 

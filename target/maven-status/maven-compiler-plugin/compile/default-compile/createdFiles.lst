@@ -37,3 +37,4 @@ com\example\HotelBookingSystem\service\RoomService.class
 com\example\HotelBookingSystem\security\jwt\JwtUtils.class
 com\example\HotelBookingSystem\repository\UserRepository.class
 com\example\HotelBookingSystem\controller\AuthController.class
+com\example\HotelBookingSystem\projection\RoomProjection.class

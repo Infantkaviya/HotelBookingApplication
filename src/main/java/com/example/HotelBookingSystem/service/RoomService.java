@@ -4,7 +4,13 @@ import com.example.HotelBookingSystem.entity.Room;
 import com.example.HotelBookingSystem.exception.InternalServerException;
 import com.example.HotelBookingSystem.exception.ResourceNotFoundException;
 import com.example.HotelBookingSystem.repository.RoomRepository;
+import com.example.HotelBookingSystem.response.RoomResponse;
+import com.example.HotelBookingSystem.projection.RoomProjection;
+
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+
+import org.apache.tomcat.util.codec.binary.Base64;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -85,4 +91,21 @@ public class RoomService implements IRoomService{
         return roomRepository.findAvailableRoomsByDatesAndType(checkInDate, checkOutDate, roomType);
     }
 
+    @Transactional
+    public List<Room> getAvailableRoomsDto(LocalDate checkIn, LocalDate checkOut, String roomType) {
+        List<RoomProjection> projections = roomRepository.findAvailableRoomProjections(checkIn, checkOut, roomType);
+
+        return projections.stream().map(proj -> {
+            Room response = new Room();
+            response.setId(proj.getId());
+            response.setRoomType(proj.getRoomType());
+            response.setRoomPrice(proj.getRoomPrice());
+            response.setBooked(proj.getIsBooked());
+
+            if (proj.getPhoto() != null) {
+                response.setPhoto(proj.getPhoto());
+            }
+            return response;
+        }).toList();
+    }
 }

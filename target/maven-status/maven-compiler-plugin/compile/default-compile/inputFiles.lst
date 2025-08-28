@@ -14,6 +14,7 @@ D:\SK\Java\src\main\java\com\example\HotelBookingSystem\exception\ResourceNotFou
 D:\SK\Java\src\main\java\com\example\HotelBookingSystem\exception\RoleAlreadyExistException.java
 D:\SK\Java\src\main\java\com\example\HotelBookingSystem\exception\UserAlreadyExistsException.java
 D:\SK\Java\src\main\java\com\example\HotelBookingSystem\HotelBookingSystemApplication.java
+D:\SK\Java\src\main\java\com\example\HotelBookingSystem\projection\RoomProjection.java
 D:\SK\Java\src\main\java\com\example\HotelBookingSystem\repository\BookingRepository.java
 D:\SK\Java\src\main\java\com\example\HotelBookingSystem\repository\RoleRepository.java
 D:\SK\Java\src\main\java\com\example\HotelBookingSystem\repository\RoomRepository.java
