@@ -10,6 +10,7 @@ const EditRoom = () => {
   })
 
   const [imagePreview, setImagePreview] = useState("")
+  const [editImagePreview, setEditImagePreview] = useState("")
   const [successMessage, setSuccessMessage] = useState("")
   const [errorMessage, setErrorMessage] = useState("")
   const { roomId } = useParams()
@@ -18,6 +19,7 @@ const EditRoom = () => {
     const selectedImage = e.target.files[0]
     setRoom({ ...room, photo: selectedImage })
     setImagePreview(URL.createObjectURL(selectedImage))
+    setEditImagePreview(null)
   }
 
   const handleInputChange = (event) => {
@@ -30,7 +32,7 @@ const EditRoom = () => {
       try {
         const roomData = await getRoomById(roomId)
         setRoom(roomData)
-        setImagePreview(roomData.photo)
+        setEditImagePreview(roomData.photo)
       } catch (error) {
         console.error(error)
       }
@@ -48,7 +50,8 @@ const EditRoom = () => {
         setSuccessMessage("Room updated successfully!")
         const updatedRoomData = await getRoomById(roomId)
         setRoom(updatedRoomData)
-        setImagePreview(updatedRoomData.photo)
+        setImagePreview(null)
+        setEditImagePreview(updatedRoomData.photo)
         setErrorMessage("")
       } else {
         setErrorMessage("Error updating room")
@@ -107,7 +110,6 @@ const EditRoom = () => {
                 Photo
               </label>
               <input
-                required
                 type="file"
                 className="form-control"
                 id="photo"
@@ -116,10 +118,18 @@ const EditRoom = () => {
               />
               {imagePreview && (
                 <img
-                  src={`data:image/jpeg;base64,${imagePreview}`}
+                  src={imagePreview}
                   alt="Room preview"
-                  style={{ maxWidth: "400px", maxHeight: "400" }}
-                  className="mt-3"
+                  style={{ maxWidth: "400px", maxHeight: "400px" }}
+                  className="mb-3"
+                />
+              )}
+              {editImagePreview && (
+                <img
+                  src={`data:image/jpeg;base64,${editImagePreview}`}
+                  alt="Room preview"
+                  style={{ maxWidth: "400px", maxHeight: "400px" }}
+                  className="mb-3"
                 />
               )}
             </div>
