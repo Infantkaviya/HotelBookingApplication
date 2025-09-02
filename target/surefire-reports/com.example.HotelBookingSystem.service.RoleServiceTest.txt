@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: com.example.HotelBookingSystem.service.RoleServiceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.204 s <<< FAILURE! -- in com.example.HotelBookingSystem.service.RoleServiceTest
+com.example.HotelBookingSystem.service.RoleServiceTest.testRemoveUserFromRole_NotFound -- Time elapsed: 0.007 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <org.springframework.security.core.userdetails.UsernameNotFoundException> but was: <java.util.NoSuchElementException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3128)
+	at com.example.HotelBookingSystem.service.RoleServiceTest.testRemoveUserFromRole_NotFound(RoleServiceTest.java:134)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at com.example.HotelBookingSystem.service.RoleService.removeUserFromRole(RoleService.java:53)
+	at com.example.HotelBookingSystem.service.RoleServiceTest.lambda$testRemoveUserFromRole_NotFound$3(RoleServiceTest.java:135)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+

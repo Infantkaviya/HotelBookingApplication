@@ -1,0 +1,100 @@
+-------------------------------------------------------------------------------
+Test set: com.example.HotelBookingSystem.service.RoomServiceTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 0.087 s <<< FAILURE! -- in com.example.HotelBookingSystem.service.RoomServiceTest
+com.example.HotelBookingSystem.service.RoomServiceTest.testGetRoomById_Success -- Time elapsed: 0.064 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testAddNewRoom -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testGetRoomPhotoByRoomId_Success -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testGetAllRooms -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testGetRoomPhotoByRoomId_NotFound -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testDeleteRoom_Success -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testUpdateRoom_Success -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testGetAvailableRooms -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testDeleteRoom_NotFound -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testUpdateRoom_NotFound -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testGetAvailableRoomsDto -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.RoomServiceTest.testGetAllRoomTypes -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setRoomPrice'
+	at com.example.HotelBookingSystem.entity.Room.setRoomPrice(Room.java:70)
+	at com.example.HotelBookingSystem.service.RoomServiceTest.setUp(RoomServiceTest.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

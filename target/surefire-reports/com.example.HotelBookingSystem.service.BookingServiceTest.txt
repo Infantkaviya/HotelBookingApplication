@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.example.HotelBookingSystem.service.BookingServiceTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 0.361 s <<< FAILURE! -- in com.example.HotelBookingSystem.service.BookingServiceTest
+com.example.HotelBookingSystem.service.BookingServiceTest.testSaveBooking_Success -- Time elapsed: 0.330 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setId'
+	at com.example.HotelBookingSystem.entity.BookedRoom.setId(BookedRoom.java:77)
+	at com.example.HotelBookingSystem.service.BookingServiceTest.setUp(BookingServiceTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.BookingServiceTest.testCancelBooking -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setId'
+	at com.example.HotelBookingSystem.entity.BookedRoom.setId(BookedRoom.java:77)
+	at com.example.HotelBookingSystem.service.BookingServiceTest.setUp(BookingServiceTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.BookingServiceTest.testFindByBookingConfirmationCode_NotFound_ShouldThrowException -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setId'
+	at com.example.HotelBookingSystem.entity.BookedRoom.setId(BookedRoom.java:77)
+	at com.example.HotelBookingSystem.service.BookingServiceTest.setUp(BookingServiceTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.BookingServiceTest.testSaveBooking_RoomNotAvailable_ShouldThrowException -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setId'
+	at com.example.HotelBookingSystem.entity.BookedRoom.setId(BookedRoom.java:77)
+	at com.example.HotelBookingSystem.service.BookingServiceTest.setUp(BookingServiceTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.BookingServiceTest.testGetAllBookings -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setId'
+	at com.example.HotelBookingSystem.entity.BookedRoom.setId(BookedRoom.java:77)
+	at com.example.HotelBookingSystem.service.BookingServiceTest.setUp(BookingServiceTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.BookingServiceTest.testGetBookingsByUserEmail -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setId'
+	at com.example.HotelBookingSystem.entity.BookedRoom.setId(BookedRoom.java:77)
+	at com.example.HotelBookingSystem.service.BookingServiceTest.setUp(BookingServiceTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.BookingServiceTest.testSaveBooking_InvalidDates_ShouldThrowException -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setId'
+	at com.example.HotelBookingSystem.entity.BookedRoom.setId(BookedRoom.java:77)
+	at com.example.HotelBookingSystem.service.BookingServiceTest.setUp(BookingServiceTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.HotelBookingSystem.service.BookingServiceTest.testFindByBookingConfirmationCode_Success -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Unimplemented method 'setId'
+	at com.example.HotelBookingSystem.entity.BookedRoom.setId(BookedRoom.java:77)
+	at com.example.HotelBookingSystem.service.BookingServiceTest.setUp(BookingServiceTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

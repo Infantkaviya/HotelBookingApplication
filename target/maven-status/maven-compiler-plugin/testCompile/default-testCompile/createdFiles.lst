@@ -1,1 +1,15 @@
+com\example\HotelBookingSystem\controller\RoleControllerTest.class
+com\example\HotelBookingSystem\repository\RoleRepositoryTest.class
+com\example\HotelBookingSystem\service\RoomServiceTest$1.class
 com\example\HotelBookingSystem\HotelBookingSystemApplicationTests.class
+com\example\HotelBookingSystem\service\UserServiceTest.class
+com\example\HotelBookingSystem\service\RoleServiceTest.class
+com\example\HotelBookingSystem\service\RoomServiceTest.class
+com\example\HotelBookingSystem\controller\UserControllerTest.class
+com\example\HotelBookingSystem\controller\RoomControllerTest.class
+com\example\HotelBookingSystem\service\BookingServiceTest.class
+com\example\HotelBookingSystem\repository\UserRepositoryTest.class
+com\example\HotelBookingSystem\repository\RoomRepositoryTest.class
+com\example\HotelBookingSystem\controller\BookingControllerTest.class
+com\example\HotelBookingSystem\controller\AuthControllerTest.class
+com\example\HotelBookingSystem\repository\BookingRepositoryTest.class
