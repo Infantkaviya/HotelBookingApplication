@@ -59,14 +59,4 @@ public class Room {
         String bookingCode=RandomStringUtils.randomNumeric(10);
         booking.setBookingConfirmationCode(bookingCode);
     }
-
-    public void setRoomPrice(double d) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setRoomPrice'");
-    }
-
-    public void setRoomPrice(BigDecimal valueOf) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setRoomPrice'");
-    }
 }

@@ -72,10 +72,4 @@ public class BookedRoom {
         this.bookingConfirmationCode = bookingConfirmationCode;
     }
 
-    public void setId(long l) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setId'");
-    }
-
-
 }
