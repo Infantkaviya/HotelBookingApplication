@@ -19,6 +19,7 @@ import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -51,7 +52,7 @@ class BookingControllerTest {
         room = new Room();
         room.setId(1L);
         room.setRoomType("DELUXE");
-        room.setRoomPrice(200.0);
+        room.setRoomPrice(new BigDecimal("200.0"));
 
         bookedRoom = new BookedRoom();
         bookedRoom.setBookingId(1L);

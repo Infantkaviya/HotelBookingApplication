@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.*;
 
 class BookingServiceTest {
@@ -40,7 +41,7 @@ class BookingServiceTest {
         room.setId(1L);
 
         booking = new BookedRoom();
-        booking.setId(1L);
+        booking.setBookingId(1L);
         booking.setCheckInDate(LocalDate.of(2025, 9, 10));
         booking.setCheckOutDate(LocalDate.of(2025, 9, 15));
         booking.setBookingConfirmationCode("CONF123");
